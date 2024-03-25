@@ -1,0 +1,66 @@
+
+.limited-time-offer-title {
+    color: var(--white, #fff);
+    font-family: Karla;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 28.8px */
+  }
+  
+.limited-time-offer-header {
+    color: var(--cyan, #54e3e6);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 36px */
+}
+  
+.limited-time-offer-subheader {
+    color: var(--white, #fff);
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+}
+
+.limited-time-offer-btn {
+    color: #FFF;
+    background-color: #E91C3E;
+    border-radius: 4px;
+    font-family: Karla;
+    font-size: 16px;
+    min-height: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.limited-time-offer-btn:hover {
+    background-color:#4D2FBB;
+  }
+
+
+@media screen and (max-width: 1024px) {
+  .limited-time-offer-title {
+    font-size: 24px;
+  }
+  
+  .limited-time-offer-header {
+    font-size: 30px;
+  }
+    
+  .limited-time-offer-subheader {
+    font-size: 18px;
+  }
+
+  .limited-time-offer-btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .limited-time-offer-btn {
+        width: 90%;
+    }
+}

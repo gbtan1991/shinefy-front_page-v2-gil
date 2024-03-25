@@ -1,0 +1,50 @@
+.socials-youtube {
+  -webkit-mask: url(/svg/home/socials/youtube-icon.svg) no-repeat center;
+  mask: url(/svg/home/socials/youtube-icon.svg) no-repeat center;
+}
+
+.socials-tiktok {
+  -webkit-mask: url(/svg/home/socials/tiktok-icon.svg) no-repeat center;
+  mask: url(/svg/home/socials/tiktok-icon.svg) no-repeat center;
+}
+
+.socials-facebook {
+  -webkit-mask: url(/svg/home/socials/facebook-icon.svg) no-repeat center;
+  mask: url(/svg/home/socials/facebook-icon.svg) no-repeat center;
+}
+
+.socials-instagram {
+  -webkit-mask: url(/svg/home/socials/instagram-icon.svg) no-repeat center;
+  mask: url(/svg/home/socials/instagram-icon.svg) no-repeat center;
+}
+
+.socials-discord {
+  -webkit-mask: url(/svg/home/socials/discord-icon.svg) no-repeat center;
+  mask: url(/svg/home/socials/discord-icon.svg) no-repeat center;
+}
+
+.socials-x1 {
+  -webkit-mask: url(/svg/home/socials/x1-icon.svg) no-repeat center;
+  mask: url(/svg/home/socials/x1-icon.svg) no-repeat center;
+}
+
+.socials-youtube,
+.socials-tiktok,
+.socials-facebook,
+.socials-instagram,
+.socials-discord,
+.socials-x1 {
+  background-color: #ba9ae2;
+  height: 40px;
+  width: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.socials-youtube:hover,
+.socials-tiktok:hover,
+.socials-facebook:hover,
+.socials-instagram:hover,
+.socials-discord:hover,
+.socials-x1:hover {
+  background-color: #fff;
+}

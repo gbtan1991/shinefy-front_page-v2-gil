@@ -1,0 +1,191 @@
+
+.legal-title-text {
+  color: var(--Tiffany-Blue, #7BDCDE);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+.legal-title-text-2 {
+  color: var(--Tiffany-Blue, #7BDCDE);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+  
+.legal-content-text {
+  color: var(--Almost-White, #F1F1F1);
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.legal-content-text-2 {
+  color: var(--Almost-White, #F1F1F1);
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.legal-content-text a,
+.legal-content-text.to-header-color,
+.legal-content-text-2 a {
+  color: #7BDCDE;
+}
+
+.legal-categories {
+    color: var(--dust, #ececec);
+    font-family: Karla;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 120%;
+    pointer-events: none;
+}
+
+.legal-category:hover {
+    text-decoration: underline;
+}
+  
+.legal-category-current {
+    color: var(--grey-4, #aeaeae);
+}
+
+.legal-numbered-texts {
+    margin: 45px;
+}
+
+.legal-bordered-container {
+    margin: 50px auto;
+    width: 700px;
+    border-radius: 4px;
+    border: 1px dashed var(--red, #E91C3E);
+    padding: 20px
+}
+
+.legal-bordered-text {
+    color: var(--soft-grey, #F1F1F1);
+    text-align: center;
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 28.8px */
+}
+
+.legal-contact-info {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.legal-accordion-heading-text {
+  font-size: 15px;
+  margin-right: -75px;
+  line-height: 1.5;
+  padding-top: -20px;
+  width: 40vh;
+}
+
+/* accordion */
+.accordion {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    margin-bottom: 0.5px;
+  }
+  .accordion-button {
+    padding: 12px 30px;
+    background-color: #8844da;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+  }
+  
+  .accordion-content {
+    font-size: 18px;
+    padding: 15px;
+    background-color: #081b31;
+    color: white;
+    color: var(--white, #fff);
+    font-family: Karla;
+    font-size: 15px;
+  }
+  .accordion-button:hover {
+    background-color: #081b31;
+  }
+  .accordion-button:active {
+    transform: scale(1);
+  }
+  .accordion-icon {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  .accordion-button.active .accordion-icon {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+
+
+
+.facebook-disclaimer-custom-text-1 {
+  color: var(--Tiffany-Blue, #7BDCDE);
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+
+@media screen and (max-width: 1200px) {
+  .legal-bordered-container {
+      width: 80%;
+  }
+}
+  
+  
+@media screen and (max-width: 1024px) {
+  .legal-content-text {
+    font-size: 16px;
+  }
+  .legal-categories {
+    font-size: 14px;
+  }
+}
+
+.respect-policy {
+  position: relative;
+}
+
+.respect-policy .number {
+  position: absolute;
+  left: 0;
+}
+
+.respect-policy p {
+  margin-left: 20px; /* Adjust this value so that 'inherently' aligns under 'Be' */
+}
+
+.indent {
+  padding-left: 20px; /* Adjust this value to match the width of '1. ' */
+}

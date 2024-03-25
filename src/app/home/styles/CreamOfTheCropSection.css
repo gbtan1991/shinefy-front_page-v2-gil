@@ -1,0 +1,54 @@
+
+
+.cream-of-crop-custom-text {
+  color: #F1F1F1;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cream-of-crop-custom-text:hover {
+  color: #7D24E9;
+}
+
+.video-player-dialog {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.video-player-dialog[open] {
+    transform:scaleY(.01) scaleX(0);
+    animation:unfoldIn 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+
+.video-player-dialog-close-btn {
+  padding: 5px;
+  border-radius: 100%;
+  background-color: #8844DA;
+  transition: box-shadow 0.3s;
+}
+
+.video-player-dialog-close-btn:hover {
+  box-shadow: 0px 10px 30px #8844DA;
+}
+
+@keyframes unfoldIn {
+  0% {
+    transform:scaleY(.005) scaleX(0);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(1) scaleX(1);
+  }
+}
+
+.video-player-dialog:modal {
+  max-width: 100vw;
+  max-height: 100vh;
+}

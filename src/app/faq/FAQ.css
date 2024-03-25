@@ -1,0 +1,4 @@
+.global-header-text-3 a {
+  color: var(--Tiffany-Blue, #7bdcde);
+  text-decoration: underline;
+}

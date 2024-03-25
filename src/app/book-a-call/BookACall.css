@@ -1,0 +1,45 @@
+.book-a-call-hero-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-color: #07061c;
+  background-image: url("/images/global/background/book-a-call-custom-bg.png");
+  box-shadow: inset 0px 100px 100px #07061c;
+}
+
+.book-a-call-custom-text-1 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.book-a-call-custom-text-2 {
+  color: #68819b;
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.book-a-call-custom-text-3 {
+  color: var(--Rich-Black, #0d0d0d);
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.active-subject {
+  color: #fff;
+  background-color: #006bff;
+}
+
+.unactive-subject {
+  color: #3d688b;
+  font-weight: 600;
+}

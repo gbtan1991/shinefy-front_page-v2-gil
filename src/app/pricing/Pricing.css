@@ -1,0 +1,163 @@
+.pricing-plan-header-custom-bg {
+  background-image: url("/images/global/background/pricing-plan-custom-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  flex-shrink: 0;
+}
+
+.pricing-plan-section-custom-bg {
+  background-color: rgba(136, 68, 218, 0.1);
+}
+
+.pricing-plan-custom-header-1 {
+  color: var(--Tiffany-Blue, #7bdcde);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.pricing-plan-checklist-text {
+  color: var(--white, #fff);
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.active-pricing-plan-cards-container {
+  position: relative;
+  background-color: #8844da;
+  transition: background-color 0.3s;
+}
+
+.unactive-pricing-plan-cards-container {
+  position: relative;
+  background-color: #121126;
+  transition:
+    box-shadow 0.3s,
+    background-color 0.3s;
+}
+
+.unactive-pricing-plan-cards-container:hover {
+  box-shadow: 0px 0px 20px #8844da;
+  cursor: pointer;
+}
+
+.active-pricing-plan-cards-container::after,
+.unactive-pricing-plan-cards-container::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(to top, #846ab6, #54e3e6, #846ab6);
+  content: "";
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.pricing-plan-card-text-1 {
+  color: #f1f1f1;
+  font-family: Roboto;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.pricing-plan-card-text-2 {
+  color: #f1f1f1;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.pricing-plan-card-text-3 {
+  color: #f1f1f1;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.active-pricing-plan-cards-container .pricing-plan-card-btn,
+.unactive-pricing-plan-cards-container .pricing-plan-card-btn {
+  color: #fff;
+  min-height: 50px;
+  border-radius: 4px;
+  font-family: Karla;
+  font-size: 16px;
+  background: #3dcb80;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.unactive-pricing-plan-cards-container .pricing-plan-card-btn {
+  background: #8844da;
+}
+
+.pricing-plan-card-btn:hover {
+  background-color: #4d2fbb;
+}
+
+.thrivecart-modal:modal {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.thrivecart-modal[open] {
+  transform: scaleY(0.01) scaleX(0);
+  animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.thrivecart-modal-close-btn {
+  padding: 5px;
+  border-radius: 100%;
+  background-color: #8844da;
+  transition: box-shadow 0.3s;
+}
+
+.thrivecart-modal-close-btn:hover {
+  box-shadow: 0px 10px 30px #8844da;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8) translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pricing-plan-section-custom-bg {
+    margin-top: 3rem;
+  }
+  .pricing-plan-third-card-container {
+    position: relative;
+    background-color: #07061c;
+  }
+
+  .pricing-plan-third-card-container::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(to top, #846ab6, #54e3e6, #846ab6);
+    content: "";
+    z-index: -1;
+    border-radius: 6px;
+  }
+}

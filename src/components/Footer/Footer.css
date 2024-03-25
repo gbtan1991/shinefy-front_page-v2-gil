@@ -1,0 +1,32 @@
+
+.footer-tagline {
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.footer-heading-title {
+    color: var(--white, #FFF);
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.footer-links-text {
+    color: var(--Almost-White, #FFF);
+    font-family: Karla;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    opacity: 0.8;
+}
+.footer-links-text:hover {
+    opacity: 1;
+}

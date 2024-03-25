@@ -1,0 +1,95 @@
+.calendar-container {
+  width: 100%;
+}
+.calendar-container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .icons {
+  display: flex;
+  gap: 1rem;
+}
+header .icons span {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  color: #006bff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.9rem;
+  user-select: none;
+}
+header .icons span:hover {
+  color: #8844da;
+}
+header .current-date {
+  color: #0b3558;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.calendar {
+  padding: 20px 0px;
+}
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li {
+  color: #aaa;
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive {
+  color: #aaa;
+}
+.days li.active {
+  color: #fff;
+}
+.days li p {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.days li.active p {
+  background: #006bff;
+}
+.days li.dateClicked p {
+  color: #006bff;
+  font-weight: 700;
+  /* border: 2px solid #006bff; */
+  background: rgba(0, 107, 255, 0.1);
+}
+
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+
+.timezone-select,
+.timezone-select option {
+  color: #3d688b;
+  cursor: pointer;
+}
+
+.timezone-select:focus {
+  box-shadow: none;
+}

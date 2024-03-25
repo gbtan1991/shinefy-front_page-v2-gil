@@ -1,0 +1,599 @@
+/* *** Home common components *** */
+.home-card-header-small {
+  color: #f1f1f1;
+  font-family: Karla;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.home-card-header-content {
+  color: #f1f1f1;
+  font-family: Karla;
+  font-size: 16px;
+  line-height: 131%;
+}
+
+.home-secondary-btn {
+  color: #fff;
+  min-height: 50px;
+  border-radius: 4px;
+  font-family: Karla;
+  font-size: 16px;
+  background: #e91c3e;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home-secondary-btn:hover {
+  background-color: #4d2fbb;
+}
+
+.home-outlined-btn {
+  color: #fff;
+  min-height: 50px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  font-family: Karla;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home-outlined-btn:hover {
+  border-color: #4d2fbb;
+  background-color: #4d2fbb;
+}
+
+.home-link {
+  color: #fff;
+  text-align: center;
+  font-family: Karla;
+  font-size: 16px;
+  text-decoration-line: underline;
+}
+
+.home-link:hover,
+.home-link:hover i {
+  color: #4d2fbb;
+  text-decoration-line: none;
+}
+
+.home-input-center-placeholder,
+.home-input-left-placeholder {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: #fff;
+  color: #161616;
+  font-family: Karla;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  box-shadow: none !important;
+}
+
+.home-input-center-placeholder::placeholder,
+.home-input-left-placeholder::placeholder {
+  color: #161616;
+  font-family: Karla;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-input-center-placeholder:focus,
+.home-input-left-placeholder:focus {
+  border: 1px solid #4d2fbb;
+  outline: 1px solid #4d2fbb;
+}
+/* ==================== */
+
+/* *** Hero section *** */
+.hero-custom-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-color: #07061c;
+  background-image: url("/images/global/background/Hero Banner Background.png");
+  box-shadow: inset 0px -100px 100px #07061c;
+
+  /* border: 1px solid red; */
+}
+
+.hero-header-container {
+  min-width: 605px;
+}
+
+.hero-mini-header-text {
+  color: #7bdcde;
+  font-family: Karla;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.hero-header-text,
+.hero-header-gradient-text {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.hero-header-gradient-text {
+  background: linear-gradient(233deg, #7d24e9 0%, #a780f8 50.01%, #3deef2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-header-content {
+  color: #fff;
+  font-family: Karla;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.hero-header-openAI-logo {
+  display: inline;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.hero-animation-container {
+  pointer-events: none;
+  max-width: 800px;
+  min-width: 300px;
+  z-index: 20;
+}
+
+/* =========================== */
+
+/* *** How to Use Shine Ai *** */
+.how-to-use-shine-ai-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-color: #07061c;
+  background-image: url("/images/global/background/how-shine-ranker-bg.png");
+  box-shadow:
+    inset 0px 100px 100px #07061c,
+    inset 0px -100px 100px #07061c,
+    0px -100px 100px #07061c;
+}
+/* ================= */
+
+/* *** Our Tools *** */
+.our-tools-container {
+  min-height: 850px;
+  margin: 0 20%;
+}
+
+.our-tools-left-content-card {
+  width: 370px;
+  margin-top: -200px;
+  margin-bottom: -80px;
+  border-radius: 4px;
+  background: var(--dark-purple, #100826);
+  box-shadow: 0px 4px 100px 0px rgba(151, 71, 255, 0.3);
+}
+
+.our-tools-right-content-title {
+  color: var(--Tiffany-Blue, #7bdcde);
+  /* text-align: center; */
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.our-tools-right-content-text {
+  color: #f1f1f1;
+  font-family: Karla;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+/* =========================== */
+
+/* 
+.cream-of-crop-custom-text {
+  color: #F1F1F1;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} */
+
+/* *** Stunning Image Output *** */
+.stunning-images-grid-img {
+  object-fit: cover;
+  opacity: 0.8;
+}
+.stunning-images-grid-img:hover {
+  opacity: 1;
+}
+
+.stunning-images-input {
+  color: #f1f1f1;
+  text-align: center;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #141638;
+  border-color: #141638;
+  border-radius: 4px;
+}
+
+.stunning-images-input::placeholder {
+  color: #8844da;
+  text-align: center;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stunning-images-input:focus {
+  border-color: #8844da;
+}
+
+/* *** Amazing Features *** */
+
+.amazing-features-grid-card {
+  padding: 2.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.amazing-features-grid-card:hover {
+  border: 1px solid #8844da;
+  box-shadow: 0px 0px 20px #8844da;
+}
+
+.amazing-features-grid-card .card-title {
+  color: #7bdcde;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+}
+/* =================== */
+
+/* *** Limited Time Offer *** */
+.limited-time-offer-container {
+  background-image: linear-gradient(#100826, #07061c);
+}
+/* ========================== */
+
+/* *** Credibility *** */
+.credibility-grid-card {
+  position: relative;
+  cursor: pointer;
+  background-color: #07061c;
+  border-radius: 4px;
+}
+
+.credibility-grid-card:hover {
+  background-color: #100826;
+}
+.credibility-grid-card:hover::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  box-shadow: 0px 0px 20px #8844da;
+  background: linear-gradient(to top, #846ab6, #54e3e6, #846ab6);
+  content: "";
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.credibility-right-container {
+  width: 50%;
+}
+
+.credibility-right-content-container {
+  position: relative;
+  width: 100%;
+  padding: 3rem;
+  background-image: url("/images/global/background/credibility-custom-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  /* background-attachment: fixed; */
+  background-color: #04101f;
+  flex-shrink: 0;
+}
+
+.credibility-right-content-container::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(to top, #846ab6, #54e3e6, #846ab6);
+  content: "";
+  z-index: -1;
+}
+
+.credibility-right-content-header {
+  width: 100%;
+}
+
+.credibility-custom-header {
+  color: var(--Tiffany-Blue, #7bdcde);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+
+/* =================== */
+
+/* *** Subscribe for Freebies *** */
+.awesome-freebies-custom-bg {
+  border: 1px solid #07061c;
+  background-image: url("/images/global/background/awesome-freebies-custom-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  /* background-attachment: fixed; */
+  flex-shrink: 0;
+}
+
+.subscribe-for-freebies-form {
+  border-radius: 4px;
+  overflow: hidden;
+  background: #323546;
+}
+
+.subscribe-for-freebies-form input {
+  color: #fff;
+  text-align: center;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  background-color: #383959;
+}
+
+.subscribe-for-freebies-form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* =========================== */
+
+/* *** Testimonials *** */
+.testimonial-section {
+  border: 1px solid #07061c;
+}
+
+.testimonial-carousel-container {
+  /* margin: 0px 17.75%; */
+  padding: 100px 2px 2px 2px !important;
+}
+
+.testimonial-card {
+  position: relative;
+  min-height: 25.5rem;
+  margin: 5px;
+  background-color: #100826;
+  border-radius: 4px;
+  font-family: Karla;
+}
+
+.testimonial-card::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(to top, #846ab6, #54e3e6, #846ab6);
+  content: "";
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.testimonial-card-profile-img {
+  margin-top: -75px;
+  align-self: center;
+}
+
+.testimonial-side-shadow-left {
+  background-image: linear-gradient(270deg, transparent, #07061c, #07061c);
+}
+.testimonial-side-shadow-right {
+  background-image: linear-gradient(90deg, transparent, #07061c, #07061c);
+}
+/* =========================== */
+
+/* *** Join Us *** */
+.join-us-section-container {
+  border: 1px solid #100826;
+  background-image: url("/images/global/background/join-us-custom-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  box-shadow: inset 0px 100px 100px #100826;
+}
+
+.join-us-content-container {
+  margin: 50px 18%;
+}
+
+.join-us-right-container {
+  /* background-color: #07061C; */
+  background-color: rgba(16, 8, 38, 0.8);
+  border-radius: 4px;
+}
+/* =========================== */
+
+@media screen and (min-width: 2400px) {
+  .our-tools-container {
+    margin: 0 calc((100vw - 1440px) / 2);
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .hero-header-openAI-logo {
+    height: 30px;
+    margin-left: 10px;
+  }
+  .hero-header-gradient-text {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .hero-header-text {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .hero-header-container {
+    min-width: 340px;
+  }
+  .hero-header-content {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .hero-header-openAI-logo {
+    height: 17px;
+    margin-left: 5px;
+  }
+  .hero-header-gradient-text {
+    font-size: 35px;
+  }
+  .hero-header-text {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-header-gradient-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero-header-text {
+    font-size: 30px;
+  }
+  .hero-header-content {
+    font-size: 16px;
+  }
+  .hero-animation-container {
+    max-width: 400px;
+    min-width: 100px;
+  }
+
+  .our-tools-container {
+    margin: 0 5%;
+  }
+  .our-tools-left-content-card {
+    width: 350px;
+  }
+
+  .credibility-right-container {
+    width: 55%;
+  }
+
+  .join-us-content-container {
+    margin: 50px 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .how-to-use-shine-ai-badge {
+    width: 85px;
+    height: 22px;
+  }
+
+  .our-tools-left-content-card {
+    width: 100%;
+    margin-top: -150px;
+    margin-bottom: 0px;
+  }
+
+  .amazing-features-grid-card {
+    background-color: #010035;
+  }
+
+  .credibility-right-container {
+    width: 100%;
+  }
+  .credibility-right-content-container {
+    width: 100%;
+    padding: 10rem 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-header-container {
+    min-width: 280px;
+  }
+
+  .our-tools-container {
+    margin: 0%;
+  }
+  .our-tools-grid-item {
+    background-color: #010035;
+  }
+
+  .credibility-grid-card-accent {
+    background-color: #010035;
+    padding: 2rem 0px;
+  }
+
+  .subscribe-for-freebies-form {
+    background: none;
+    gap: 10px;
+  }
+
+  .subscribe-for-freebies-form input {
+    padding: 0px 10px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .testimonial-card {
+    min-height: 24rem;
+  }
+
+  .join-us-content-container {
+    margin: 50px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-mini-header-text {
+    font-size: 22px;
+  }
+  .hero-header-text {
+    font-size: 26px;
+  }
+  .hero-header-gradient-text {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .hero-header-content {
+    font-size: 15px;
+  }
+
+  .stunning-images-grid-img {
+    max-height: 80px;
+  }
+}
