@@ -48,10 +48,13 @@ const StyledPaginationComponent = styled(Pagination)(({ theme }) => ({
 export default function Blogs() {
   // Fetch Categories
   const [categories, setCategories] = useState([]);
-  const [data, setData] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("All Categories");
 
-  
-  
+  // Fetch Blogs
+  const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(6);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -78,12 +81,12 @@ export default function Blogs() {
     fetchCategories();
   }, []);
 
+  console.log(data);
 
-
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
+  const currentPost = data.slice(firstPostIndex, lastPostIndex);
   
-
-  const [selectedCategory, setSelectedCategory] = useState("All Categories");
-  const [page, setPage] = useState(1);
  
 
 
@@ -121,7 +124,7 @@ export default function Blogs() {
 
       <section className="mb-10 px-[5%] lg:px-[10%] 2xl:px-[18%]">
         <div className="mt-[-17rem] flex flex-col items-center">
-          <div className="mb-10 flex max-w-[800px] flex-wrap justify-center gap-3">
+          {/* <div className="mb-10 flex max-w-[800px] flex-wrap justify-center gap-3">
             {categories.map((category, index) => (
               <div key={index}>
                 <button
@@ -136,7 +139,7 @@ export default function Blogs() {
               </div>
             )) 
             }
-          </div>
+          </div> */}
 
           <div className="mb-10 flex h-20 w-full flex-row items-center justify-between">
             <div className="mr-5 flex flex-row gap-2">
@@ -157,7 +160,7 @@ export default function Blogs() {
             </div>
           </div>
 
-          <div className="mb-1np0 grid min-h-[50rem] w-full grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:gap-x-14 xl:grid-cols-3 blog-container" >
+          {/* <div className="mb-1np0 grid min-h-[50rem] w-full grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:gap-x-14 xl:grid-cols-3 blog-container" >
           {selectedCategory === "All Categories" ? 
   data.map((blog, index) => (
     <div key={index}>
@@ -189,7 +192,7 @@ export default function Blogs() {
     </div>
   ))
 }
-          </div>
+          </div> */}
 
           <div className="mb-10 flex h-20 w-full flex-col items-center justify-between gap-y-10 md:flex-row md:gap-y-0">
             <div className="flex flex-row gap-2">
