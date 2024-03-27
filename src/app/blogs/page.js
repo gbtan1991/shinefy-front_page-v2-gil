@@ -78,7 +78,7 @@ export default function Blogs() {
     fetchCategories();
   }, []);
 
-  console.log(data)
+
 
   
 
