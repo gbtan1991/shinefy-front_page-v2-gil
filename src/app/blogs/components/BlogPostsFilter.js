@@ -52,7 +52,7 @@ export default function BlogPostsFilter({
 
       <dialog
         ref={filterDialogRef}
-        className="absolute top-[55px] w-full bg-[#110a27] p-5 font-karla md:min-w-[18rem]"
+        className="absolute top-[55px] w-full bg-[#110a27] p-5 font-karla md:min-w-[18rem] z-10"
       >
         <p className="mb-4 text-xl text-[#4d2fbb]">Refined Results</p>
 

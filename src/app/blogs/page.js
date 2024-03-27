@@ -15,6 +15,8 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import Pagination from "@mui/material/Pagination";
 
 import "./Blogs.css";
+import CategoryList from "./components/CategoryList";
+import BlogHeader from "./components/BlogHeader";
 
 const StyledPaginationComponent = styled(Pagination)(({ theme }) => ({
   "& ul > li:first-child > button": {
@@ -107,39 +109,16 @@ export default function Blogs() {
 
   return (
     <>
-      <header className="global-header-section-bg min-h-[48rem] px-[5%] pt-[16rem] lg:pt-[15.5rem] xl:px-[18%]">
-        <div className="flex flex-col md:items-center">
-          <h1 className="global-header-text-1 mb-6 md:text-center">
-            Blog Posts
-          </h1>
-          <h3 className="global-header-text-2 mb-6 md:text-center">
-            Feature Articles
-          </h3>
-          <p className="global-header-text-3 max-w-[620px] md:text-center">
-            Choose from these list to read more about topics relevant to your
-            content and curiosities.
-          </p>
-        </div>
-      </header>
+      <BlogHeader />
 
       <section className="mb-10 px-[5%] lg:px-[10%] 2xl:px-[18%]">
         <div className="mt-[-17rem] flex flex-col items-center">
-          {/* <div className="mb-10 flex max-w-[800px] flex-wrap justify-center gap-3">
-            {categories.map((category, index) => (
-              <div key={index}>
-                <button
-                  value={category.name}
-                  onClick={handleChangeCategory}
-                  className={`global-outlined-btn-2 whitespace-nowrap rounded px-5 py-4 text-white ${
-                    selectedCategory == category.name ? "active-radio" : ""
-                  }`}
-                >
-                  {category.name}
-                </button>
-              </div>
-            )) 
-            }
-          </div> */}
+          
+          
+         <CategoryList  categories={categories} handleChangeCategory={handleChangeCategory} selectedCategory={selectedCategory}/>
+            
+           
+          
 
           <div className="mb-10 flex h-20 w-full flex-row items-center justify-between">
             <div className="mr-5 flex flex-row gap-2">
