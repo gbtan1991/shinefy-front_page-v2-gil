@@ -76,7 +76,7 @@ export default function BlogPostsFilter({
           ))}
         </div>
 
-        <hr className="mb-4 border border-[#190e3c]" />
+        {/* <hr className="mb-4 border border-[#190e3c]" />
 
         <p className="mb-3 text-base text-[#4d2fbb]">Date</p>
         <div className="mb-3 flex flex-row justify-start gap-x-8">
@@ -139,7 +139,7 @@ export default function BlogPostsFilter({
           <img src="/svg/home/star outline.svg" alt="star icon" height="24" />
           <img src="/svg/home/star outline.svg" alt="star icon" height="24" />
           <img src="/svg/home/star outline.svg" alt="star icon" height="24" />
-        </button>
+        </button> */}
 
         <div className="mt-5 flex flex-row justify-evenly">
           <button

@@ -17,6 +17,10 @@ import Pagination from "@mui/material/Pagination";
 import "./Blogs.css";
 import CategoryList from "./components/CategoryList";
 import BlogHeader from "./components/BlogHeader";
+import { useFetchCategories } from "./utils/useFetchCategories";
+import { useFetchBlogs } from "./utils/useFetchBlogs";
+import BlogList from "./components/BlogList";
+
 
 const StyledPaginationComponent = styled(Pagination)(({ theme }) => ({
   "& ul > li:first-child > button": {
@@ -48,56 +52,50 @@ const StyledPaginationComponent = styled(Pagination)(({ theme }) => ({
 }));
 
 export default function Blogs() {
-  // Fetch Categories
-  const [categories, setCategories] = useState([]);
+
+
+  // FETCH CATEGORIES
+  const categories = useFetchCategories()
   const [selectedCategory, setSelectedCategory] = useState("All Categories");
-
-  // Fetch Blogs
-  const [data, setData] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(6);
-  const [page, setPage] = useState(1);
-
-  useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const res = await fetch(
-          "http://localhost/test-cms/wpCMS/wp-json/wp/v2/categories",
-        ); //CHANGE TO ENV
-        const fetchedCategories = await res.json();
-        const allCategoriesFirst = [
-          { name: "All Categories" },
-          ...fetchedCategories,
-        ];
-        setCategories(allCategoriesFirst);
-
-        const resData = await fetch(
-          "http://localhost/test-cms/wpCMS/wp-json/wp/v2/posts?_embed",
-        ); //CHANGE TO ENV
-        const fetchedData = await resData.json();
-        setData(fetchedData);
-      } catch (error) {
-        console.log("Error fetching categories", error.message);
-      }
-    };
-    fetchCategories();
-  }, []);
-
-  console.log(data);
-
-  const lastPostIndex = currentPage * postsPerPage;
-  const firstPostIndex = lastPostIndex - postsPerPage;
-  const currentPost = data.slice(firstPostIndex, lastPostIndex);
   
- 
-
-
+  // CHANGING CATEGORY
   const handleChangeCategory = (event) => {
     setSelectedCategory(event.target.value);
   };
 
+
+  // FETCH BLOGS
+  const data = useFetchBlogs()
+
+  
+  
+  // PAGINATION SET UP
+  
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(6);
+  
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
+  const currentPost = data.slice(firstPostIndex, lastPostIndex);
+    
+
+  //PAGINATION PAGE COUNTER
+  const [pageCount, setPageCount] = useState(0);
+ 
+  useEffect(() => {
+    countAllPages();
+  }, [data, postsPerPage]);
+  
+  const countAllPages = () => {
+    setPageCount(Math.ceil(data.length / postsPerPage));
+  };
+ 
+  
+
+ //PAGINATION EVENTS
+ 
   const handleChangePage = (event, value) => {
-    setPage(value);
+    setCurrentPage(value);
   };
 
   const scrollUp = () => {
@@ -114,7 +112,7 @@ export default function Blogs() {
       <section className="mb-10 px-[5%] lg:px-[10%] 2xl:px-[18%]">
         <div className="mt-[-17rem] flex flex-col items-center">
           
-          
+        
          <CategoryList  categories={categories} handleChangeCategory={handleChangeCategory} selectedCategory={selectedCategory}/>
             
            
@@ -139,39 +137,9 @@ export default function Blogs() {
             </div>
           </div>
 
-          {/* <div className="mb-1np0 grid min-h-[50rem] w-full grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:gap-x-14 xl:grid-cols-3 blog-container" >
-          {selectedCategory === "All Categories" ? 
-  data.map((blog, index) => (
-    <div key={index}>
-      <BlogCard
-        id={blog.id}
-        slug={blog.slug}
-        title={blog.title.rendered}
-        content={blog.content.rendered}
-        featImage={blog._embedded["wp:featuredmedia"][0].source_url}
-        category={blog._embedded["wp:term"][0][0].name}
-        date={blog.date}
+          <BlogList data={currentPost} selectedCategory={selectedCategory}/>
+
         
-      />
-    </div>
-  )) 
-  : 
-  data.filter(blog => blog._embedded["wp:term"][0][0].name === selectedCategory).map((filteredBlog, index) => (
-    <div key={index}>
-      <BlogCard
-        id={filteredBlog.id}
-        slug={filteredBlog.slug}
-        title={filteredBlog.title.rendered}
-        content={filteredBlog.content.rendered}
-        featImage={filteredBlog._embedded["wp:featuredmedia"][0].source_url}
-        category={filteredBlog._embedded["wp:term"][0][0].name}
-        date={filteredBlog.date}
-        
-      />
-    </div>
-  ))
-}
-          </div> */}
 
           <div className="mb-10 flex h-20 w-full flex-col items-center justify-between gap-y-10 md:flex-row md:gap-y-0">
             <div className="flex flex-row gap-2">
@@ -187,8 +155,8 @@ export default function Blogs() {
             </div>
 
             <StyledPaginationComponent
-              count={3}
-              page={page}
+              count={pageCount}
+              page={currentPage}
               onChange={handleChangePage}
               variant="outlined"
               shape="rounded"
