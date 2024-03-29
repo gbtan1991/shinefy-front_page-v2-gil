@@ -76,7 +76,7 @@ export default function BlogPostsFilter({
           ))}
         </div>
 
-        {/* <hr className="mb-4 border border-[#190e3c]" />
+        <hr className="mb-4 border border-[#190e3c]" />
 
         <p className="mb-3 text-base text-[#4d2fbb]">Date</p>
         <div className="mb-3 flex flex-row justify-start gap-x-8">
@@ -102,8 +102,8 @@ export default function BlogPostsFilter({
           </button>
         </div>
 
-        <hr className="mb-4 border border-[#190e3c]" />
-
+         <hr className="mb-4 border border-[#190e3c]" />
+{/*
         <p className="mb-5 text-base text-[#4d2fbb]">Popularity</p>
         <button className="mb-1 flex flex-row justify-center whitespace-nowrap px-2 py-1 text-white">
           <img src="/svg/home/star.svg" alt="star icon" height="24" />
